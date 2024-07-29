@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+}
+
+.contenedor-principal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.primero {
+  position: relative;
+  top: 0px;
+  background-color: black;
+}
+
+.primero img {
+  width: 100%;
+  opacity: 0.3;
+}
+
+.segundo {
+  background-color: black;
+  position: relative;
+  top: 0px;
+}
+
+.segundo img {
+  width: 100%;
+  opacity: 0.3;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f27979;
+    height: 120px;
+}
+
+.logo img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.opciones{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+    margin-top: 50px;
+    width: 350px;
+}
+
+.opciones a{
+    text-decoration: none;
+    color: #192252;
+    font-size: 20px;
+}
