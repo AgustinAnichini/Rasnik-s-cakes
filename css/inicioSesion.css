@@ -84,11 +84,18 @@ body {
   font-family: "Times New Roman", Times, serif;
 }
 
+.info-inicio span {
+  color: white;
+  font-weight: bold;
+  margin-top: 15px;
+  display: inline-block;
+}
+
 .info-inicio form {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  margin-top: 10px;
+  gap: 3rem;
+  margin-top: 50px;
   align-items: center;
 }
 
@@ -131,13 +138,4 @@ body {
 
 .password:hover {
   border-bottom: solid 2px var(--btn-color);
-}
-
-.registro {
-  position: absolute;
-  top: 25%;
-  z-index: 99;
-  text-align: center;
-  color: white;
-  width: 75%;
 }
