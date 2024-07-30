@@ -8,26 +8,243 @@
     scroll-behavior: smooth;
     list-style: none;
     text-decoration: none;
-    background-color: aqua;
+    box-sizing: border-box;
     /* font-family: "Bodoni Moda", serif; */
 }
 
-.menu {
+
+:root{
+    --btn-color:#f27979;
+    --line-color:#ca9e71;
+    --titulo-color:rgb(140, 32, 22);
+    --footer-color:#ffe1df;
+}
+
+header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: end;
+    position: absolute;
+    top: 3%;
+    z-index: 99;
+    width: 100%;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
     margin-right: 30px;
   }
-  
+
   .menu a {
-    margin-top: 20px;
-    margin-right: 30px;
     text-decoration: none;
-    font-size: medium;
-    /* color: white; */
+    color: white;
     transition: all 0.5s;
   }
-  
+
   .menu a:hover {
     transform: scale(1.2);
     transition: all 0.5s;
   }
+
+
+  .hero{
+    position: relative;
+    background-color: black;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    top: 0px;
+    z-index: 98;
+  }
+
+  .hero img {
+    width: 100%;
+    opacity: 0.7;
+  }
+
+
+  .info-logo{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    height: 25%;
+    z-index: 99;
+  }
+
+.texto-logo{
+    color: white;
+}
+
+.logo{
+    border-radius: 50%;
+    width: 40%;
+    height: auto;
+}
+
+.btn-catalogo{
+    background-color: var(--btn-color);
+    padding: 8px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    display: inline-block;
+    transition: all 0.5s;
+}
+
+.btn-catalogo:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  text-align: center;
+  gap: 20px;
+  height: 100%;
+  max-width: 100%; 
+  margin: 0px auto 200px auto;
+}
+
+.contenedor-filtros{
+  background-color: var(--btn-color);
+  box-shadow: 5px 0 10px -5px rgba(0, 0, 0, 0.5);
+  height: 100%;
+}
+
+.filtros {
+  background-color: var(--btn-color);
+  position: sticky; 
+  top: 200px; 
+  left: 0;
+  padding: 10px;  
+  max-height: calc(100vh - 20px); 
+  overflow-y: auto; 
+}
+
+
+.catalogo {
+  background-color: white;
+  margin: 20px 0;
+  padding: 10px;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  align-items: flex-end;
+  margin: 0px 2rem;
+}
+
+.tituto-seccion {
+  color: var(--titulo-color);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.logo-seccion {
+  border-radius: 50%;
+  width: 8%;
+  height: auto;
+}
+
+.line {
+  width: 95%;
+  height: 2px;
+  background-color: var(--line-color);
+  margin: 0px 2rem;
+
+}
+
+.contenedor-card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+}
+
+.card {
+  width: 14rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  transition: all 0.3s ease-in-out;
+}
+
+.titulo-curso {
+  color: var(--titulo-color);
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.precio-Curso {
+  color: var(--titulo-color);
+  font-weight: bold;
+  text-align: left;
+}
+
+.accion-curso {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.ver-curso {
+  display: inline-block;
+  color: var(--titulo-color);
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.redes-logo{
+  background-color: var(--footer-color);
+  height: max-content;
+}
+
+.foot-img{
+  width: 100%;
+  text-align: center;
+}
+
+.foot-img img{
+  width: 8%;
+  height: auto;
+}
+
+.redes{
+  gap: 4rem;
+  align-items: center;
+}
+
+.redes a {
+  margin: 15px 0px;
+}
+
+.copyright p{
+  background-color: var(--btn-color);
+  text-align: center;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
