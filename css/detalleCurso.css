@@ -1,0 +1,196 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    /* font-family: "Bodoni Moda", serif; */
+  }
+  
+  :root {
+    --btn-color: #f27979;
+    --line-color: #ca9e71;
+    --titulo-color: rgb(140, 32, 22);
+    --footer-color: #ffe1df;
+    --form-color: #192252;
+  }
+  
+  header {
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    top: 3%;
+    z-index: 99;
+    width: 100%;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-right: 30px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+  }
+  
+  .menu a:hover {
+    transform: scale(1.2);
+    transition: all 0.5s;
+  }
+  
+  .hero {
+    position: relative;
+    background-color: black;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    top: 0px;
+    z-index: 98;
+  }
+  
+  .hero img {
+    width: 100%;
+    opacity: 0.4;
+  }
+  
+  .info-logo {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    height: 25%;
+    z-index: 99;
+  }
+  
+  .texto-logo {
+    color: white;
+    font-size: 30px;
+  }
+  
+  .logo {
+    border-radius: 50%;
+    width: 40%;
+    height: auto;
+  }
+  
+  .btn-catalogo {
+    background-color: var(--btn-color);
+    padding: 8px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    display: inline-block;
+    transition: all 0.5s;
+  }
+  
+  .btn-catalogo:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+  }
+
+  .seccion-info{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--footer-color);
+    box-shadow: 0px 1px 1px 1px rgba(32, 32, 32, 0.628);
+  }
+
+  .datos{
+    display: flex;
+    gap: 100px;
+    margin-left: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .precio{
+    border-right: 1px solid var(--titulo-color);
+    padding-right: 100px;
+    text-align: center;
+  }
+
+  .precio p{
+    color: var(--titulo-color);
+    font-weight: 700;
+  }
+
+  .clases{
+    border-right: 1px solid var(--titulo-color);
+    padding-right: 100px;
+    text-align: center;
+  }
+
+  .clases p{
+    color: var(--titulo-color);
+    font-weight: 700;
+  }
+
+  .duracion{
+    border-right: 1px solid var(--titulo-color);
+    padding-right: 100px;
+    text-align: center;
+  }
+
+  .duracion p{
+    color: var(--titulo-color);
+    font-weight: 700;
+  }
+
+  .boton{
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: var(--btn-color);
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 7px;
+    border-radius: 5px;
+    transition: all .2s;
+  }
+
+  .boton a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    transition: all .2s;
+  }
+
+  .boton:hover{
+    transform: scale(1.1);
+    transition: all .2s;
+  }
+
+  .contenedor{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap:100px;
+  }
+
+  .descripcion{
+    color: var(--titulo-color);
+    margin-left: 100px;
+  }
+
+  iframe{
+    border-radius: 5px;
+  }
+
+
+
+
+
+
+  
