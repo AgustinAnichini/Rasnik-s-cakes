@@ -173,10 +173,10 @@
   }
 
   .contenedor{
-    margin-top: 100px;
+    margin-top: 50px;
     display: grid;
     grid-template-columns: 40% 60%;
-    gap:100px;
+    gap: 50px;
   }
 
   .descripcion{
@@ -184,8 +184,128 @@
     margin-left: 100px;
   }
 
+  .descripcion p{
+    font-size: 17px;
+    font-weight: 400;
+  }
+
+  .video-trailer{
+    height: 600px;
+  }
+
   iframe{
     border-radius: 5px;
+    width: 82%;
+    height: 70%;
+  }
+
+  .titulo-tecnicas{
+    font-weight: 700;
+  }
+
+  .lista-tecnicas{
+    list-style-type: square;
+  }
+
+  .certificacion{
+    margin-top: 0;
+    margin-left: 100px;
+  }
+
+  .certificacion h5{
+    font-weight: 700;
+    color: var(--titulo-color);
+  }
+
+  .certificacion p{
+    color: var(--titulo-color);
+  }
+
+  .certificacion img{
+    width: 70%;
+  }
+
+  footer{
+    margin-top: 30px;
+  }
+
+  .redes-logo {
+    background-color: var(--footer-color);
+    height: max-content;
+  }
+  
+  .foot-img {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .foot-img img {
+    width: 8%;
+    height: auto;
+  }
+  
+  .redes {
+    gap: 4rem;
+    align-items: center;
+  }
+  
+  .redes a {
+    margin: 15px 0px;
+  }
+  
+  .copyright p {
+    background-color: var(--btn-color);
+    text-align: center;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+  }
+
+  @media (min-width: 1400px) {
+    .contenedor{
+      gap: 50px;
+    }
+  
+    .descripcion{
+      color: var(--titulo-color);
+      margin-left: 200px;
+      height: 500px;
+    }
+  
+    .descripcion p{
+      font-size: 17px;
+      font-weight: 400;
+    }
+
+    .video-trailer {
+      height: 500px;
+    }
+
+    iframe{
+      border-radius: 5px;
+      width: 80%;
+      height: 100%;
+    }
+
+    .certificacion{
+      margin-top: 0;
+      margin-left: 200px;
+    }
+  
+    .certificacion h5{
+      font-weight: 700;
+      color: var(--titulo-color);
+    }
+  
+    .certificacion p{
+      color: var(--titulo-color);
+    }
+  
+    .certificacion img{
+      width: 70%;
+    }
   }
 
 
