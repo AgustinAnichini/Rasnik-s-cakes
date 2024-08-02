@@ -23,19 +23,22 @@
   </head>
   <body>
     <header>
-      <div>
-        <img src="/img/rasnikLogo.jpeg" alt="" />
-      </div>
-      <div class="navbar">
-        <a href="#miPerfil" id="seleccionado">Mi perfil</a>
-        <a href="">Mis cursos</a>
-        <a href="">Administrar</a>
-        <a href="">Catálogo</a>
-        <a href="">Cerrar sesion</a>
-      </div>
+      <nav class="nav">
+        <div class="logoNav">
+          <img src="/img/rasnikLogo.jpeg" alt="" />
+        </div>
+
+        <div class="navbar">
+          <a href="#miPerfil" id="seleccionado">Mi perfil</a>
+          <a href="">Mis cursos</a>
+          <a href="">Administrar</a>
+          <a href="">Catálogo</a>
+          <a href="">Cerrar sesion</a>
+        </div>
+      </nav>
     </header>
 
-    <div class="encabezado container mt-5">
+    <div class="encabezadoPerfil container mt-5">
       <h1 class="tituto-seccion">Mi perfil</h1>
       <img
         src="/img/rasnikLogo.jpeg"
@@ -50,32 +53,85 @@
         <h1>Datos personales</h1>
       </div>
 
-      <div class="user">
-        <img src="/img/user.svg" alt="" />
-      </div>
-
       <div class="userAccion">
-        <div class="item-user">
-          <img src="/img/email.svg" alt="" />
-          <p>Email@ejemplo.com</p>
-        </div>
 
-        <div class="item-user">
-          <img src="/img/user-1.svg" alt="" />
-          <p><a href="">Mi perfil</a></p>
+        <div class="fotoPerfil">
+          <a href="#cambiarFotoPerfil">
+              <img src="/img/cakes.jpg" alt="" />
+              <div class="cambiarFotoTexto"><img src="/img/add.svg" alt=""></div>
+          </a>
         </div>
+      
 
-        <div class="item-user">
-          <img src="/img/video.svg" alt="" />
-          <p><a href="">Mis cursos</a></p>
-        </div>
+        <div class="info-perfil mt-5">
+          <div class="logos">
+            <img src="/img/checked.svg" alt="" />
+            <img src="/img/checked.svg" alt="" />
+            <img src="/img/checked.svg" alt="" />
+            <img src="/img/telefono.svg" alt="" />
+          </div>
 
-        <div class="item-user">
-          <img src="/img/catalogo.svg" alt="" />
-          <p><a href="">Catalogo</a></p>
+          <div class="campos">
+            <p>Nombre</p>
+            <p>Apellido</p>
+            <p>Correo</p>
+            <p>Telefono</p>
+          </div>
+
+          <div>
+            <form action="action" method="post" class="formPerfil">
+              <input
+                type="text"
+                name="nombre"
+                placeholder="Nombre registrado"
+                required
+              />
+
+              <input
+                type="text"
+                name="apellido"
+                placeholder="Apellido registrado"
+                required
+              />
+
+              <input
+                type="email"
+                name="correo"
+                placeholder="Correo registrado"
+                required 
+              />
+
+              <input
+                type="tel"
+                name="telefono"
+                placeholder="Agregar telefono"
+                required
+              />
+
+              <div class="btn-perfil mt-5">
+                <button type="submit" class="btn-catalogo">Guardar</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-    
+
+    <footer>
+      <div class="redes-logo">
+        <div class="container foot-img">
+          <img src="/img/logo-png.png" class="logo-footer" alt="" />
+        </div>
+
+        <div class="d-flex justify-content-center w-100 redes">
+          <a href=""><img src="/img/tiktok.svg" alt="" /></a>
+          <a href=""><img src="/img/instagram.svg" alt="" /></a>
+          <a href=""><img src="/img/youtube.svg" alt="" /></a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2024 Website. All rigths reseved</p>
+      </div>
+    </footer>
   </body>
 </html>
