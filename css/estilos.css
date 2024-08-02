@@ -353,18 +353,18 @@ header {
 .icons {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .acciones{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: max-content;
+  justify-content: space-around;  
 }
 
-.acciones a {
+.acciones p {
   display: inline-block;  
+  margin-top: 10px;
 }
 
 .lineUser {
