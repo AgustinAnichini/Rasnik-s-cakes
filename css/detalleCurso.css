@@ -177,6 +177,7 @@
     display: grid;
     grid-template-columns: 40% 60%;
     gap: 50px;
+    overflow: hidden;
   }
 
   .descripcion{
@@ -191,6 +192,7 @@
 
   .video-trailer{
     height: 600px;
+    width: 100%;
   }
 
   iframe{
