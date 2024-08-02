@@ -44,7 +44,7 @@ header {
 .navbar {
   display: flex;
   justify-content: space-around;
-  width: 600px;
+  width: 500px;
   margin-right: 5rem;
   gap: 1rem;
 }
