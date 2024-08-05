@@ -1,0 +1,209 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/pagos-datosp.css" />
+    <link rel="icon" href="/img/rasnikLogo.jpeg" />
+
+    <title>Rasnik´s Cake</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="logoNav">
+          <img src="/img/rasnikLogo.jpeg" alt="" />
+        </div>
+      </nav>
+    </header>
+
+    <div class="back">
+     <a href="detalleCurso.html"><img src="/img/back.svg" alt=""></a>
+    </div>
+
+    <div
+      class="pago-section container mt-3 d-flex justify-content-between align-items-center position-relative"
+    >
+      <div class="step d-flex flex-column align-items-center position-relative">
+        <div class="check"><p>1</p></div>
+        <p class="fw-bold">Datos personales</p>
+      </div>
+
+      <div class="step d-flex flex-column align-items-center position-relative">
+        <div class="no-check"><p>2</p></div>
+        <p class="fw-bold">Pago</p>
+      </div>
+
+      <div class="step d-flex flex-column align-items-center position-relative">
+        <div class="no-check"><p>3</p></div>
+        <p class="fw-bold">Resumen</p>
+      </div>
+    </div>
+
+    <section class="container pago mt-3 mb-5">
+      <div class="info-pago w-100 mt-3">
+        
+        <div class="datosPersonales datosPagos">
+          <div class="nombreUsuario">
+            <h1 class="text-center">Datos personales</h1>
+          </div>
+
+          <div class="userAccion">
+            <div class="info-perfil w-100">
+              <div class="campos">
+                <p>Nombre</p>
+                <p>Apellido</p>
+                <p>Correo</p>
+                <p>Repita su correo</p>
+              </div>
+
+              <div>
+                <form action="#envioForm" method="post" class="formPerfil">
+                  <input
+                    type="text"
+                    name="nombre"
+                    placeholder="Ingrese su nombre"
+                    required
+                  />
+
+                  <input
+                    type="text"
+                    name="apellido"
+                    placeholder="Ingrese su apellido"
+                    required
+                  />
+
+                  <input
+                    type="email"
+                    name="correo"
+                    placeholder="Ingrese su correo"
+                    required
+                  />
+
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Repita su correo"
+                    required
+                  />
+                  
+                  <div>
+                    <button type="submit" class="btn-catalogo">
+                      Siguiente
+                    </button>
+                  </div> 
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="container d-flex justify-content-center align-items-center"
+        >
+          <div class="datosPersonales" style="width: 82%">
+            <div class="nombreUsuario">
+              <h1 class="text-center">Tu compra incluye</h1>
+            </div>
+
+            <div class="mt-3">
+              <div class="">
+                <div class="w-100 text-left">
+                  <p class="w-50 text-left mt-2">Item</p>
+                  <p class="w-50 text-left mt-2">Item</p>
+                  <p class="w-50 text-left mt-2">Item</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="producto mt-3">
+
+        <div class="curso-container mt-4">
+          <div class="img-fondo">
+            <img src="/img/cakes.jpg" alt="" />
+          </div>
+        
+          <div class="info-curso w-75">
+            <img src="/img/rasnikLogo.jpeg" alt="" class="logo-curso" />
+            <p class="titulo-curso">Curso de mini cakes</p>
+          </div>
+        </div>
+        
+        <div class="d-flex justify-content-center">
+          <div class="detalle-compra">
+            <div class="d-flex flex-column">
+              <h1 class="titulo-detalle">Detalle compra</h1>
+              <div class="d-flex justify-content-center">
+                <div class="line"></div>
+              </div>
+              <div class="d-flex justify-content-between">
+                <div class="items-comprados d-flex flex-column m-2" >
+                  <p class="fw-bold">Curso de mini cakes</p>
+                  <p class="fw-bold">Precio</p>
+                  <p class="fw-bold">Descuento</p>
+
+                </div> 
+
+                <div class="precios">
+                  <p class="fw-bold">X 1</p>
+                  <p class="fw-bold">$30.000</p>
+                  <p class="fw-bold">- $5.000</p>
+                </div>
+
+              </div>
+              <div class="d-flex justify-content-center">
+                <div class="line"></div>
+              </div>
+
+
+              <div class="d-flex justify-content-between w-100">
+                <div class="total m-2">
+                  <p class="fw-bold">Total</p>
+                </div>
+
+                <div class="total-precio m-2">
+                  <p class="fw-bold">$25.000</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="redes-logo">
+        <div class="container foot-img">
+          <img src="/img/logo-png.png" class="logo-footer" alt="" />
+        </div>
+
+        <div class="d-flex justify-content-center w-100 redes">
+          <a href=""><img src="/img/tiktok.svg" alt="" /></a>
+          <a href=""><img src="/img/instagram.svg" alt="" /></a>
+          <a href=""><img src="/img/youtube.svg" alt="" /></a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2024 Website. All rigths reseved</p>
+      </div>
+    </footer>
+  </body>
+</html>
