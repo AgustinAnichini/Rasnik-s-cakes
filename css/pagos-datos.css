@@ -236,6 +236,12 @@ header {
   margin-top: 2rem;
 }
 
+.formPerfil p{
+  font-size: small;
+  text-align: left;
+  margin-left: 20px;
+}
+
 .formPerfil input {
   border-bottom: solid 2px var(--form-color);
   background-color: transparent;
@@ -272,7 +278,7 @@ header {
   position: absolute;
   z-index: 99;
   right: 19rem;
-  bottom: -19rem;
+  bottom: -10rem;
 }
 
 .btn-catalogo:hover {
@@ -286,10 +292,9 @@ header {
 
 .curso-container {
   position: relative;
-  width: 70%; /* Ajusta el ancho según tus necesidades */
-  margin: auto; /* Centra el contenedor si es necesario */
-  border-radius: 10px; /* Mantiene el borde redondeado */
-  overflow: hidden; /* Esconde cualquier contenido que sobresalga */
+  width: 70%; 
+  margin: auto; 
+  border-radius: 10px; 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -297,6 +302,7 @@ header {
   width: 100%;
   height: auto;
   filter: brightness(40%);
+  border-radius: 10px;
 }
 
 .info-curso {
@@ -377,4 +383,10 @@ header {
   top: 3.5rem;
   left: 2rem;
   width: max-content;
+}
+
+.resumen-campos{
+  font-size: medium;
+  font-weight: bold;
+  color: var(--form-color);
 }

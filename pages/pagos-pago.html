@@ -43,7 +43,7 @@
       </div>
 
       <div class="step d-flex flex-column align-items-center position-relative">
-        <div class="no-check"><p>2</p></div>
+        <div class="check"><p>2</p></div>
         <p class="fw-bold">Pago</p>
       </div>
 
@@ -62,49 +62,29 @@
 
           <div class="userAccion">
             <div class="info-perfil w-100">
-              <div class="campos">
-                <p>Nombre</p>
-                <p>Apellido</p>
-                <p>Correo</p>
-                <p>Repita su correo</p>
-              </div>
-
               <div>
-                <form action="#envioForm" method="post" class="formPerfil">
-                  <input
-                    type="text"
-                    name="nombre"
-                    placeholder="Ingrese su nombre"
-                    required
-                  />
-
-                  <input
-                    type="text"
-                    name="apellido"
-                    placeholder="Ingrese su apellido"
-                    required
-                  />
-
-                  <input
-                    type="email"
-                    name="correo"
-                    placeholder="Ingrese su correo"
-                    required
-                  />
-
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Repita su correo"
-                    required
-                  />
-
-                  <div>
-                    <button type="submit" class="btn-catalogo">
-                      Siguiente
-                    </button>
-                  </div>
-                </form>
+                <form action="#envioForm" method="post" class="formPerfil align-items-start">
+                    <div class="d-flex flex-column gap-2">
+                      <div class="d-flex align-items-center gap-2">
+                        <input type="radio" name="paymentMethod" id="mercadoPago" required />
+                        <label for="mercadoPago" class="mb-0">Mercado Pago</label>
+                      </div>
+                      <p class="mb-3">Al seleccionar esta opción, una vez finalizada la compra, vas a poder obtener el CBU para transferir.</p>
+                    </div>
+                  
+                    <div class="d-flex flex-column gap-2">
+                      <div class="d-flex align-items-center gap-2">
+                        <input type="radio" name="paymentMethod" id="transferencia" required />
+                        <label for="transferencia" class="mb-0">Transferencia Bancaria</label>
+                      </div>
+                      <p class="mb-3">Al seleccionar esta opción, una vez finalizada la compra, se te enviará al sitio de Mercado Pago para que puedas efectuar la compra.</p>
+                    </div>
+                  
+                    <div>
+                      <button type="submit" class="btn-catalogo">Siguiente</button>
+                    </div>
+                  </form>
+                  
               </div>
             </div>
           </div>
