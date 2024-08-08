@@ -13,7 +13,7 @@
 }
 
 :root {
-  --btn-color: #f27979;
+  --btn-color: rgb(242, 121, 121);
   --line-color: #ca9e71;
   --titulo-color: rgb(140, 32, 22);
   --footer-color: #ffe1df;
@@ -410,41 +410,70 @@ header {
   display: none;
 }
 
+.logo-filtro {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
   .contenedor {
     display: flex;
     flex-direction: column;
+    height: max-content;
   }
 
-  .contenedor-filtros{
+  .filtros {
     display: none;
   }
 
-  .catalogo{
+  .logo-filtro {
     display: inline;
-    max-height: max-content;
   }
 
-  .contenedor-card{
-    max-height: max-content;
+  .logo-seccion {
+    display: none;
   }
 
-  main{
-    max-height: max-content;
+  .contenedor-filtros {
+    width: 0%;
   }
 
-  .contenedor-card{
-    flex-direction: column;
+  .card {
+    width: 9rem;
+  }
+
+  .titulo-curso {
+    font-size: 0.8rem;
+  }
+
+  .precio-Curso {
+    font-size: 0.8rem;
+  }
+
+  .ver-curso {
+    font-size: 0.8rem;
+  }
+
+  main {
+    height: max-content;
+  }
+
+  .catalogo {
+    display: block;
+    margin: 20px 0;
+    padding: 10px;
+  }
+
+  .contenedor-card {
     align-items: center;
+    width: 100%;
   }
 
-  footer{
-    position: relative;
+  footer {
     bottom: 0;
     z-index: 100;
   }
 
-  .foot-img img{
+  .foot-img img {
     width: 30%;
   }
 
@@ -524,16 +553,16 @@ header {
     margin: 0px 1rem;
   }
 
-  .encabezado{
+  .encabezado {
     width: 80%;
     align-items: center;
   }
 
-  .line{
+  .line {
     width: 80%;
   }
 
-  .logo-seccion{
+  .logo-seccion {
     width: 20%;
   }
 }

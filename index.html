@@ -40,6 +40,7 @@
           >
             <img src="img/menu.svg" alt="" />
           </button>
+
           <div
             class="offcanvas offcanvas-end z-99"
             tabindex="-1"
@@ -102,10 +103,14 @@
 
         <div class="acciones">
           <p>Email@ejemplo.com</p>
-          <p><a href="">Mi perfil</a></p>
-          <p><a href="">Mis cursos</a></p>
-          <p><a href="">Catalogo</a></p>
-          <p><a href="" id="cerrarSesion">Cerrar sesion</a></p>
+          <p><a href="pages/miPerfil.html">Mi perfil</a></p>
+          <p><a href="pages/miPerfil.html">Mis cursos</a></p>
+          <p><a href="index.html#catalogo">Catalogo</a></p>
+          <p>
+            <a href="pages/inicioSesion.html" id="cerrarSesion"
+              >Cerrar sesion</a
+            >
+          </p>
         </div>
       </div>
     </div>
@@ -179,11 +184,89 @@
             </div>
           </form>
         </div>
+
+        <div class="navbar filtros-mobile" id="filtros-collapse">
+          <div class="container-fluid d-flex justify-content-end">
+            <div
+              class="offcanvas offcanvas-end z-99 w-100"
+              tabindex="-1"
+              id="filtros"
+              aria-labelledby="filtrosLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title titulo-mobile" id="filtrosLabel">
+                  Rasnik´s Cakes
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <div class="w-100 d-flex justify-content-start">
+                <div class="line-nav"></div>
+              </div>
+
+              <div class="offcanvas-body">
+                <form action="#" method="get">
+                  <p class="tituto-seccion">Filtros</p>
+                  <div class="input-grupo">
+                    <label for="busqueda">Buscar</label>
+                    <input
+                      type="text"
+                      id="busqueda"
+                      name="busqueda"
+                      placeholder="Buscar un producto"
+                    />
+
+                    <label for="busqueda">Buscar</label>
+                    <input
+                      type="text"
+                      id="busqueda"
+                      name="busqueda"
+                      placeholder="Buscar un producto"
+                    />
+
+                    <label for="busqueda">Buscar</label>
+                    <input
+                      type="text"
+                      id="busqueda"
+                      name="busqueda"
+                      placeholder="Buscar un producto"
+                    />
+
+                    <div class="w-100 d-flex justify-content-center mt-4">
+                      <input
+                        class="btn-catalogo w-25"
+                        type="submit"
+                        id="filtrar"
+                        name="filtrar"
+                        value="Filtrar"
+                      />
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="catalogo">
         <div class="encabezado">
           <h1 class="tituto-seccion">Catálogo</h1>
+          <button
+            class="navbar-toggler border-0 logo-filtro"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#filtros"
+            aria-controls="filtros"
+            aria-label="Toggle filters"
+          >
+            <img src="img/filtros.svg" alt="Toggle filters" />
+          </button>
           <img
             src="img/rasnikLogo.jpeg"
             alt="logo Rasnik´s cakes"
@@ -295,6 +378,7 @@
               <p class="precio-Curso">$30.000</p>
               <a href="#comprar" class="ver-curso">Ver curso</a>
             </div>
+            <!-- -->
           </div>
         </div>
       </section>
