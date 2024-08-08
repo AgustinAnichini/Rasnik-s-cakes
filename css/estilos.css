@@ -356,6 +356,14 @@ header {
   display: none;
 }
 
+.icons img{
+  width: 50%;
+}
+
+.acciones p {
+  font-size: small;
+}
+
 .nombreUsuario {
   position: relative;
   top: 0px;
@@ -383,8 +391,8 @@ header {
 
 .userAccion {
   display: flex;
-  justify-content: space-between;
-  padding: 20px;
+  justify-content: space-evenly;
+  padding: 10px;
 }
 
 .icons {
@@ -492,10 +500,6 @@ header {
     width: 100%;
   }
 
-  footer {
-    bottom: 0;
-    z-index: 100;
-  }
 
   .foot-img img {
     width: 30%;
