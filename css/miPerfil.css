@@ -33,10 +33,11 @@
 
 /* Estilo del thumb cuando se pasa el cursor */
 ::-webkit-scrollbar-thumb:hover {
-  background-color: var(--titulo-color); /* Color del thumb al pasar el cursor */
+  background-color: var(
+    --titulo-color
+  ); /* Color del thumb al pasar el cursor */
   border: 3px solid var(--titulo-color); /* Borde alrededor del thumb */
 }
-
 
 :root {
   --btn-color: #f27979;
@@ -295,4 +296,126 @@ header {
 
 .fotoPerfil:hover .cambiarFotoTexto {
   opacity: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .info-perfil {
+    width: 100%;
+    gap: 1rem;
+    height: max-content;
+  }
+
+  .logos {
+    display: none;
+  }
+
+  .campos {
+    width: max-content;
+  }
+
+  .formPerfil {
+    width: max-content;
+  }
+
+  .campos p {
+    font-size: small;
+  }
+
+  .formPerfil input {
+    font-size: small;
+  }
+
+  .btn-catalogo {
+    width: max-content;
+    font-size: small;
+  }
+
+  #navMobile {
+    width: max-content;
+  }
+
+  .logoNav img {
+    width: 10%;
+    border-radius: 50%;
+  }
+
+  .titulo-mobile {
+    color: var(--titulo-color);
+    font-weight: bold;
+  }
+
+  .line-nav {
+    width: 85%;
+    height: 2px;
+    background-color: var(--line-color);
+    margin: 0px 1rem;
+  }
+
+  .nav-item a {
+    color: var(--form-color);
+    font-size: large;
+    font-size: larger;
+    text-decoration: none;
+    margin: 0.5rem 0rem;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .btn-nav img {
+    width: 80%;
+  }
+
+  .encabezadoPerfil {
+    width: 80%;
+  }
+
+  .logo-seccion {
+    width: 15%;
+  }
+
+  .tituto-seccion {
+    font-size: 1.2rem;
+  }
+
+  .line {
+    width: 75%;
+  }
+
+  .datosPersonales {
+    width: 80%;
+    height: auto;
+    overflow: auto;
+    margin-bottom: 15rem;
+  }
+
+  .foot-img img {
+    width: 30%;
+  }
+
+  .userAccion {
+    height: max-content;
+  }
+
+  .nombreUsuario h1 {
+    font-size: 1rem;
+  }
+
+  .fotoPerfil a {
+    display: flex;
+    justify-content: center;
+  }
+
+  .fotoPerfil img {
+    width: 50%;
+  }
+
+  .cambiarFotoTexto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

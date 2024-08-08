@@ -35,6 +35,70 @@
           <a href="">Cerrar sesion</a>
         </div>
       </nav>
+
+      <nav class="navbar w-100" id="navMobile">
+        <div
+          class="container-fluid d-flex justify-content-beetwen aling-item-center"
+        >
+          <div class="logoNav">
+            <img src="/img/rasnikLogo.jpeg" alt="" />
+          </div>
+
+          <button
+            class="navbar-toggler border-0 btn-nav"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <img src="/img/menu.svg" alt="" />
+          </button>
+
+          <div
+            class="offcanvas offcanvas-end z-99"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5
+                class="offcanvas-title titulo-mobile"
+                id="offcanvasNavbarLabel"
+              >
+                Rasnik´s Cakes
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="w-100 d-flex justify-content-start">
+              <div class="line-nav"></div>
+            </div>
+
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flexw-1 pe-3">
+                <li class="nav-item">
+                  <a href="#miPerfil" id="seleccionado">Mi perfil</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="registro.html">Registrate</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="/index.html">Catálogo</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="">Cerrar sesion</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <div class="encabezadoPerfil container mt-5">
@@ -53,14 +117,14 @@
       </div>
 
       <div class="userAccion">
-
         <div class="fotoPerfil">
           <a href="#cambiarFotoPerfil">
-              <img src="/img/cakes.jpg" alt="" />
-              <div class="cambiarFotoTexto"><img src="/img/add.svg" alt=""></div>
+            <img src="/img/cakes.jpg" alt="" />
+            <div class="cambiarFotoTexto">
+              <img src="/img/add.svg" alt="" />
+            </div>
           </a>
         </div>
-      
 
         <div class="info-perfil mt-5">
           <div class="logos">
@@ -97,7 +161,7 @@
                 type="email"
                 name="correo"
                 placeholder="Correo registrado"
-                required 
+                required
               />
 
               <input
@@ -132,5 +196,16 @@
         <p>Copyright © 2024 Website. All rigths reseved</p>
       </div>
     </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
