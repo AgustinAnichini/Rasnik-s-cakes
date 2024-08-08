@@ -211,7 +211,15 @@ body {
   height: auto;
 }
 
+#navMobile {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
+  #navMobile {
+    display: inline;
+  }
+
   .primero {
     display: none;
   }
@@ -237,6 +245,7 @@ body {
     color: var(--titulo-color);
     font-weight: bold;
   }
+
   .line-nav {
     width: 85%;
     height: 2px;
@@ -276,5 +285,9 @@ body {
 
   #inicioSesion {
     width: 40%;
+  }
+
+  .info-inicio input {
+    width: 60%;
   }
 }
