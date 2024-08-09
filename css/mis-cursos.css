@@ -119,73 +119,79 @@ header {
   background-color: var(--line-color);
 }
 
-.datosPersonales {
-  background-color: white;
-  height: auto;
-  border-radius: 10px;
-  width: 50%;
-  margin-top: 5%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  padding: 0 0 20px 0;
-  margin-bottom: 5rem;
-}
-.nombreUsuario {
-  position: relative;
-  top: 0px;
+.line-misCursos {
   width: 100%;
-  background-color: var(--btn-color);
-  padding: 10px;
-  color: var(--form-color);
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  height: 2px;
+  background-color: var(--line-color);
 }
 
-.nombreUsuario h1 {
-  font-size: larger;
-  padding: 5px;
+.container-texto {
+  width: 100%;
 }
 
-.userAccion {
+.misCursos-container {
+  width: 70%;
+  background-color: white;
+  height: max-content;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin: 15px 0px;
-  padding: 15px;
-  gap: 10px;
-  width: 100%;
+  gap: 3rem;
 }
 
-.formPerfil input {
-  border-bottom: solid 2px var(--form-color);
-  background-color: transparent;
-}
-
-.formPerfil input::placeholder {
-  color: var(--form-color);
-}
-
-.btn-perfil {
-  display: flex;
-  justify-content: end;
-  width: 100%;
-}
-
-.btn-catalogo {
-  background-color: var(--btn-color);
-  padding: 8px;
+.card-cursos {
   border-radius: 10px;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  font-size: 1rem;
-  display: inline-block;
-  transition: all 0.5s;
+  background-color: var(--footer-color);
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 2rem;
+  width: 100%;
 }
 
-.btn-catalogo:hover {
-  transform: scale(1.1);
-  transition: all 0.5s;
+.curso-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.curso-container:hover {
+  transform: scale(1.02);
+  transition: all 0.2s ease-in-out;
+}
+
+.img-curso {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  transition: opacity 0.2s ease-in-out;
+  filter: brightness(50%);
+}
+
+.play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.info-curso {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.info-curso h1 {
+  padding-top: 1rem;
+}
+
+.texto-misCursos {
+  color: var(--titulo-color);
+  font-size: medium;
+  margin-top: 0.8rem;
+  text-align: justify;
 }
 
 /* FOOTER */
@@ -229,81 +235,7 @@ footer {
   align-items: center;
   margin-bottom: 0px;
 }
-
 /* FOOTER */
-
-.info-perfil {
-  display: flex;
-  justify-content: space-around;
-  gap: 8rem;
-  background-color: var(--footer-color);
-  padding: 15px;
-  border-radius: 10px;
-}
-
-.logos {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.campos {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-top: 2rem;
-}
-
-.formPerfil {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  margin-top: 2rem;
-}
-/**/
-
-.fotoPerfil {
-  position: relative;
-  display: inline-block;
-}
-
-.fotoPerfil img {
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 10px;
-  transition: opacity 0.2s ease-in-out;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-.fotoPerfil img:hover {
-  opacity: 0.7;
-}
-
-.cambiarFotoTexto {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-  opacity: 0;
-  transition: opacity 0.2s ease-in-out;
-  text-align: center;
-}
-
-.cambiarFotoTexto img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.fotoPerfil:hover .cambiarFotoTexto {
-  opacity: 1;
-}
-
 .mobile {
   display: none;
 }
@@ -431,5 +363,37 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .misCursos-container {
+    width: 90%; 
+    padding: 1rem;
+  }
+
+  .card-cursos {
+    grid-template-columns: 1fr; 
+    gap: 1.5rem;
+  }
+
+  .img-curso {
+    width: 100%; 
+    border-radius: 10px;
+  }
+
+  .play {
+    width: 20%; 
+  }
+
+  .info-curso h1 {
+    font-size: 1.2rem; 
+  }
+
+  .texto-misCursos {
+    font-size: 0.9rem; 
+    margin-top: 0.5rem;
+  }
+
+  .line-misCursos {
+    margin-bottom: 1rem; 
   }
 }
